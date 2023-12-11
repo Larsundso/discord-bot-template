@@ -1,4 +1,3 @@
-import * as Discord from 'discord.js';
 import merge from 'lodash.merge';
 import client from '../Client.js';
 import stp from '../../Utils/stp.js';
@@ -17,13 +16,8 @@ export const languages = {
 const mergeLang = <T extends Record<string, any>>(lang: T) =>
  merge({}, languages['en-GB'], lang) as T & (typeof languages)['en-GB'];
 
-const t = (lan: ReturnType<typeof mergeLang>) => ({
+const t = (lan: ReturnType<typeof mergeLang>): (typeof languages)['en-GB'] => ({
  ...lan.t,
- welcome: (user: Discord.User, guild: Discord.Guild) => stp(lan.t.welcome, { user, guild }),
- defaultValuesLog: (oldValue: string, newValue: string) =>
-  stp(lan.t.welcome, { oldValue, newValue }),
- pageBetween: (x: number, y: number) => stp(lan.t.pageBetween, { x, y }),
- voiceHub: (u: Discord.User) => stp(lan.t.voiceHub, { u }),
 });
 
 export default class Language {
