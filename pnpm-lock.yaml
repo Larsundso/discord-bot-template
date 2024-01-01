@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  discord.js@14.14.1:
+    hash: kvzacsilciopxrpoam4g2c2nga
+    path: patches/discord.js@14.14.1.patch
+
 dependencies:
   '@discordjs/core':
     specifier: ^1.1.1
@@ -28,7 +33,7 @@ dependencies:
     version: 0.37.65
   discord.js:
     specifier: ^14.14.1
-    version: 14.14.1
+    version: 14.14.1(patch_hash=kvzacsilciopxrpoam4g2c2nga)
   dotenv:
     specifier: ^16.3.1
     version: 16.3.1
@@ -56,6 +61,9 @@ dependencies:
   request:
     specifier: ^2.88.2
     version: 2.88.2
+  string-similarity:
+    specifier: ^4.0.4
+    version: 4.0.4
   typescript:
     specifier: ^5.3.2
     version: 5.3.2
@@ -91,6 +99,9 @@ devDependencies:
   '@types/source-map-support':
     specifier: ^0.5.10
     version: 0.5.10
+  '@types/string-similarity':
+    specifier: ^4.0.2
+    version: 4.0.2
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
@@ -725,6 +736,10 @@ packages:
       source-map: 0.6.1
     dev: true
 
+  /@types/string-similarity@4.0.2:
+    resolution: {integrity: sha512-LkJQ/jsXtCVMK+sKYAmX/8zEq+/46f1PTQw7YtmQwb74jemS1SlNLmARM2Zml9DgdDTWKAtc5L13WorpHPDjDA==}
+    dev: true
+
   /@types/ws@8.5.10:
     resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
     dependencies:
@@ -1324,7 +1339,7 @@ packages:
     resolution: {integrity: sha512-CQHW3Nu04LEHIj1Xps/sfGhTdrowilxnek2tirpLhwvrmgmLr1C6A+4JFLs+0kJMH2IX2QgDyA9GfNehqN+xPQ==}
     dev: false
 
-  /discord.js@14.14.1:
+  /discord.js@14.14.1(patch_hash=kvzacsilciopxrpoam4g2c2nga):
     resolution: {integrity: sha512-/hUVzkIerxKHyRKopJy5xejp4MYKDPTszAnpYxzVVv4qJYf+Tkt+jnT2N29PIPschicaEEpXwF2ARrTYHYwQ5w==}
     engines: {node: '>=16.11.0'}
     dependencies:
@@ -1346,6 +1361,7 @@ packages:
       - bufferutil
       - utf-8-validate
     dev: false
+    patched: true
 
   /doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
@@ -3246,6 +3262,11 @@ packages:
       jsbn: 0.1.1
       safer-buffer: 2.1.2
       tweetnacl: 0.14.5
+    dev: false
+
+  /string-similarity@4.0.4:
+    resolution: {integrity: sha512-/q/8Q4Bl4ZKAPjj8WerIBJWALKkaPRfrvhfF8k/B23i4nzrlRj2/go1m90In7nG/3XDSbOo0+pu6RvCTM9RGMQ==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dev: false
 
   /string-width@4.2.3:

@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node --max-old-space-size=8192 ./dist/index.js",
     "build": "npx tsc",
-    "dev": "cd ./dist && node --enable-source-maps --experimental-default-type ./index.js --debug --warn",
+    "dev": "node --enable-source-maps --experimental-default-type ./dist/index.js --debug --warn",
     "watch": "npx tsc --watch"
   },
   "dependencies": {
@@ -25,6 +25,7 @@
     "node-schedule": "^2.1.1",
     "prettier": "^3.1.0",
     "request": "^2.88.2",
+    "string-similarity": "^4.0.4",
     "typescript": "^5.3.2"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "@types/node-schedule": "^2.1.4",
     "@types/pg": "^8.10.9",
     "@types/source-map-support": "^0.5.10",
+    "@types/string-similarity": "^4.0.2",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "eslint": "^8.55.0",
@@ -50,5 +52,10 @@
     "eslint-plugin-prettier": "^5.0.1",
     "prisma": "^5.6.0",
     "source-map-support": "^0.5.21"
+  },
+  "pnpm": {
+   "patchedDependencies": {
+    "discord.js@14.14.1": "patches/discord.js@14.14.1.patch"
+   }
   }
 }
