@@ -1,4 +1,4 @@
-import * as CT from '../../Typings/CustomTypings.js';
+import * as Discord from 'discord.js';
 
 /**
  * If a slash command is used the file will be searched and called automatically.
@@ -17,7 +17,6 @@ import * as CT from '../../Typings/CustomTypings.js';
  * The code will look for "src/Commands/SlashCommands/ping/user/info.js"
  */
 
-const f: CT.AutoCompleteFile['default'] = async (cmd) =>
+export default (cmd: Discord.ChatInputCommandInteraction) => {
  new Array(5).fill(null).map(() => ({ name: cmd.guild?.name ?? '-', value: cmd.guild?.id ?? '-' }));
-
-export default f;
+};
