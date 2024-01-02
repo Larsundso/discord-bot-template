@@ -1,7 +1,7 @@
 import * as CT from '../../Typings/CustomTypings.js';
 
 /**
- * If a slash command the file will be searched and called automatically.
+ * If a slash command is used the file will be searched and called automatically.
  *
  * @example
  * If you have a slash command with the name 'ping';
