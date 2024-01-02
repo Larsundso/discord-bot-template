@@ -4,12 +4,12 @@ import stp from '../../Utils/stp.js';
 
 // When adding translations, import them here and add them to the languages object.
 import enJSON from '../../Languages/en-GB.json' assert { type: 'json' };
-import deJSON from '../../Languages/de-DE.json' assert { type: 'json' };
+// import deJSON from '../../Languages/de-DE.json' assert { type: 'json' };
 
 export const languages = {
  'en-GB': enJSON,
  'en-US': enJSON,
- 'de-DE': deJSON,
+ // 'de-DE': deJSON,
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
