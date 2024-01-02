@@ -5,7 +5,8 @@
     "start": "node --max-old-space-size=8192 ./dist/index.js",
     "build": "npx tsc",
     "dev": "node --enable-source-maps --experimental-default-type ./dist/index.js --debug --warn",
-    "watch": "npx tsc --watch"
+    "watch": "npx tsc --watch",
+    "apply-db": "npx prisma db push"
   },
   "dependencies": {
     "@discordjs/core": "^1.1.1",
