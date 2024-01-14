@@ -1,0 +1,73 @@
+{
+ "support": "Support",
+ "error": "Error",
+ "commandHandler": {
+  "usage": "Usage",
+  "exampleUsage": "Example Usage"
+ },
+ "errors": {
+  "contactSupport": "Please contact support",
+  "channelNotFound": "Channel not found"
+ },
+ "permissions": {
+  "error": {
+   "msg": "I'm missing Permissions to execute this Command",
+   "needed": "Needed Permissions:",
+   "you": "You are missing Permissions to execute this Command"
+  },
+  "perms": {
+   "AddReactions": "Add Reactions",
+   "Administrator": "Administrator",
+   "AttachFiles": "Attach Files",
+   "BanMembers": "Ban Members",
+   "ChangeNickname": "Change Nickname",
+   "Connect": "Connect",
+   "CreateInstantInvite": "Create Instant Invite",
+   "CreatePrivateThreads": "Create Private Threads",
+   "CreatePublicThreads": "Create Public Threads",
+   "DeafenMembers": "Deafen Members",
+   "EmbedLinks": "Embed Links",
+   "KickMembers": "Kick Members",
+   "ManageChannels": "Manage Channels",
+   "ManageEmojisAndStickers": "Manage Emojis and Stickers",
+   "ManageEvents": "Manage Events",
+   "CreateEvents": "Create Events",
+   "ManageGuild": "Manage Guild/Server",
+   "ManageGuildExpressions": "Manage Expressions",
+   "CreateGuildExpressions": "Create Expressions",
+   "ManageMessages": "Manage Messages",
+   "ManageNicknames": "Manage Nicknames",
+   "ManageRoles": "Manage Roles",
+   "ManageThreads": "Manage Threads",
+   "ManageWebhooks": "Manage Webhooks",
+   "MentionEveryone": "Mention Everyone",
+   "ModerateMembers": "Moderate Members",
+   "MoveMembers": "Move Members",
+   "MuteMembers": "Mute Members",
+   "PrioritySpeaker": "Priority Speaker",
+   "ReadMessageHistory": "Read Message History",
+   "RequestToSpeak": "Request to Speak",
+   "SendMessages": "Send Messages",
+   "SendMessagesInThreads": "Send Messages in Threads",
+   "SendTTSMessages": "Send TTS Messages",
+   "SendVoiceMessages": "Send Voice Messages",
+   "Speak": "Speak",
+   "Stream": "Stream",
+   "UseApplicationCommands": "Use Application Commands",
+   "UseEmbeddedActivities": "Start Embedded Activities",
+   "UseExternalEmojis": "Use external Emojis",
+   "UseExternalSounds": "Use external Sounds",
+   "UseExternalStickers": "Use external Stickers",
+   "UseSoundboard": "Use Soundboard",
+   "UseVAD": "Use Voice-Activity-Detection",
+   "ViewAuditLog": "View Audit Log",
+   "ViewChannel": "View Channel",
+   "ViewCreatorMonetizationAnalytics": "View Creator Monetization Analytics",
+   "ViewGuildInsights": "View Guild/Server Insights",
+   "ManageChannel": "Manage Channel",
+   "ReadMessages": "Read Messages",
+   "ViewChannels": "View Channels",
+   "ManagePermissions": "Manage Permissions"
+  }
+ }
+}
